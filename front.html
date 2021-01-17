@@ -1,0 +1,52 @@
+<div class="body1">
+    <div class="main1">
+        <div class="question"><br /><br />{{Question}}</div>
+        <div id="options">
+            <div id="optionstext" style="display:none;">{{Options}}</div>
+            <div id="answertext" style="display:none;">{{Answer}}</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var choiced = ""
+
+    var options = document.getElementById('optionstext').innerText.split('|')
+    var answer = document.getElementById('answertext').innerText.trim()
+
+    var optionsHTML = ''
+    for (var i = 0; i < options.length; i++) {
+        var id = String.fromCharCode(65 + i)
+        optionsHTML = optionsHTML + "<div class=option onclick='onclickanswer(this.id)' id = '" + id + "'>" +
+            id + ". " + options[i] + "</div>"
+    }
+    var optionsElement = document.getElementById('options')
+    optionsElement.innerHTML = optionsHTML
+
+    function onclickanswer(id) {
+        choiced = id
+        checkcolor()
+    }
+
+    function checkcolor() {
+        for (var i = 0; i < options.length; i++) {
+            var id = String.fromCharCode(65 + i)
+            if (id != choiced && id != answer) {
+                ele = document.getElementById(id)
+                ele.style.backgroundColor = '#f3f4f6'; //灰
+                ele.style.color = 'black';
+            }
+        }
+        if (choiced != "") {
+            right = document.getElementById(answer)
+            right.style.backgroundColor = '#03c459'; //绿
+            right.style.color = 'white';
+            if (choiced != answer) {
+                wrong = document.getElementById(choiced)
+                wrong.style.backgroundColor = '#f74e75'; //红
+                wrong.style.color = 'white';
+            }
+        }
+    }
+</script>
