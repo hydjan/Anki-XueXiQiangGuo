@@ -7,7 +7,7 @@
 * [从releases下载](https://github.com/hydjan/Anki-XueXiQiangGuo/releases)
 
 <figure>
-  <img src="https://github.com/hydjan/Anki-XueXiQiangGuo/blob/main/front.png?raw=true" width="200"/><img src="https://github.com/hydjan/Anki-XueXiQiangGuo/blob/main/back.png?raw=true" width="200"/>
+  <img src="https://github.com/hydjan/Anki-XueXiQiangGuo/blob/main/front.png?raw=true" width="400"/><img src="https://github.com/hydjan/Anki-XueXiQiangGuo/blob/main/back.png?raw=true" width="400"/>
 </figure>
 
 
