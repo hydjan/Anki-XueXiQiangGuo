@@ -18,7 +18,7 @@
 * 得分局不着急答题，等两秒，如果对手有秒答题的，就退出
 
 ### 故意输题太费时！
-* 提供一个Android版小工具，点击下载：[呆呆输题v0.2.3.apk](https://hydjan.github.io/dd/呆呆输题v0.2.3.apk)
+* 提供一个Android版小工具，点击下载：[呆呆输题v0.2.5.4.apk](https://hydjan.github.io/dd/呆呆输题v0.2.5.4.apk)
 
 <figure>
   <img src="https://hydjan.github.io/dd/DayDayLose.png?raw=true" width="400"/>
